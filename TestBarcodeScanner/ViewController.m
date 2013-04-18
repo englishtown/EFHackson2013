@@ -11,6 +11,7 @@
 #import "MediaData.h"
 #import "EFDownloadManager.h"
 #import "EFVideoViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 {
@@ -22,13 +23,20 @@
 
 @implementation ViewController
 
+- (id)init{
+    if (self = [super init]) {
+        
+        [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(recieveActivityId:) name:@"ACTIVITY_ID_Ready" object:nil];
+//        dataArray = @[@"1",@"2"];
+    }
+    return self;
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 460)];
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(recieveJson:) name:@"JSON_DATA_Ready" object:nil];
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(recieveActivityId:) name:@"ACTIVITY_ID_Ready" object:nil];
     
     theTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, 320, 460 - 50) style:UITableViewStylePlain];
     theTableView.delegate = self;
@@ -36,7 +44,9 @@
     [self.view addSubview:theTableView];
     
     urlArray = [[NSMutableArray alloc] init];
+    //urlArray = @[@"test",@"ss"];
     dataArray = [[NSMutableArray alloc] init];
+    //dataArray = @[@"2",@"3"];
     
     dictionary = [[NSMutableDictionary alloc]init];
     
@@ -51,7 +61,12 @@
 }
 -(void)recieveActivityId:(NSNotification *)noti
 {
+    NSLog(@"recieved event %@",noti);
     activityId = [noti object];
+    //dataArray = @[@"1",@"2"];
+    //[theTableView reloadData];
+    
+    [((AppDelegate*)[UIApplication sharedApplication].delegate).tabBarController setSelectedIndex:1];
 }
 -(void)recieveJson:(NSNotification *)noti
 {
