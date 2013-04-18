@@ -67,6 +67,8 @@
         NSLog(@"result %@", result);
         // Vibrate
         AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"ACTIVITY_ID_Ready" object:[NSString stringWithFormat:@"%@",@"89774"]];
     }
 }
 
