@@ -12,6 +12,7 @@
 #import "StudyFlashcardsViewController.h"
 #import "StudyVideoViewController.h"
 #import "ActionsViewController.h"
+#import "FlashCardRootViewController.h"
 
 @implementation AppDelegate
 @synthesize tabBarController;
@@ -23,7 +24,7 @@
     
     ScanBarcodeViewController *sbVC = [[ScanBarcodeViewController alloc] initWithNibName:@"ScanBarcodeViewController" bundle:nil];
     StudyFlashcardsViewController *sfVC = [[StudyFlashcardsViewController alloc] initWithNibName:@"StudyFlashcardsViewController" bundle:nil];
-    StudyVideoViewController *svVC = [[StudyVideoViewController alloc] initWithNibName:@"StudyVideoViewController" bundle:nil];
+    FlashCardRootViewController *svVC = [[FlashCardRootViewController alloc] init];
     ActionsViewController *aVC = [[ActionsViewController alloc] initWithNibName:@"ActionsViewController" bundle:nil];
 
     sbVC.title = @"Scan";
