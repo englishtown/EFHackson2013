@@ -27,18 +27,15 @@
     if (self = [super init]) {
         
         [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(recieveActivityId:) name:@"ACTIVITY_ID_Ready" object:nil];
-//        dataArray = @[@"1",@"2"];
+        [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(recieveJson:) name:@"JSON_DATA_Ready" object:nil];
     }
     return self;
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 460)];
     
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(recieveJson:) name:@"JSON_DATA_Ready" object:nil];
-    
-    theTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, 320, 460 - 50) style:UITableViewStylePlain];
+    theTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 49) style:UITableViewStylePlain];
     theTableView.delegate = self;
     theTableView.dataSource = self;
     [self.view addSubview:theTableView];
@@ -50,14 +47,6 @@
     
     dictionary = [[NSMutableDictionary alloc]init];
     
-//	// Do any additional setup after loading the view, typically from a nib.
-//    UIButton *testButton = [[UIButton alloc]initWithFrame:CGRectMake(100, 300, 120, 60)];
-//    testButton.backgroundColor = [UIColor blueColor];
-//    [testButton setTitle:@"test" forState:UIControlStateNormal];
-//    [testButton addTarget:self action:@selector(fetchUrl) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:testButton];
-    
-
 }
 
 - (void)viewWillAppear:(BOOL)animated {
