@@ -25,6 +25,12 @@
 		4B8D40EE1720292500EE4C93 /* Select.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B8D40EB1720292500EE4C93 /* Select.png */; };
 		4B8D40EF1720292500EE4C93 /* Forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B8D40EC1720292500EE4C93 /* Forward.png */; };
 		4B8D40F1172029A200EE4C93 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8D40F0172029A200EE4C93 /* MediaPlayer.framework */; };
+		4B8D41081720346F00EE4C93 /* FlashCardDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D41031720346F00EE4C93 /* FlashCardDataManager.m */; };
+		4B8D41091720346F00EE4C93 /* Vocabulary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D41051720346F00EE4C93 /* Vocabulary.m */; };
+		4B8D410A1720346F00EE4C93 /* VocabularyDict.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D41071720346F00EE4C93 /* VocabularyDict.m */; };
+		4B8D4111172034F000EE4C93 /* FlashCardRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D410C172034EF00EE4C93 /* FlashCardRootViewController.m */; };
+		4B8D4112172034F000EE4C93 /* FlashCardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D410E172034F000EE4C93 /* FlashCardTableViewController.m */; };
+		4B8D4113172034F000EE4C93 /* FlashCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D4110172034F000EE4C93 /* FlashCardViewController.m */; };
 		CDC03751171FE40F00861C07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC03750171FE40F00861C07 /* UIKit.framework */; };
 		CDC03753171FE40F00861C07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC03752171FE40F00861C07 /* Foundation.framework */; };
 		CDC03755171FE40F00861C07 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC03754171FE40F00861C07 /* CoreGraphics.framework */; };
@@ -123,6 +129,18 @@
 		4B8D40EB1720292500EE4C93 /* Select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Select.png; sourceTree = "<group>"; };
 		4B8D40EC1720292500EE4C93 /* Forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Forward.png; sourceTree = "<group>"; };
 		4B8D40F0172029A200EE4C93 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		4B8D41021720346F00EE4C93 /* FlashCardDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashCardDataManager.h; sourceTree = "<group>"; };
+		4B8D41031720346F00EE4C93 /* FlashCardDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardDataManager.m; sourceTree = "<group>"; };
+		4B8D41041720346F00EE4C93 /* Vocabulary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vocabulary.h; sourceTree = "<group>"; };
+		4B8D41051720346F00EE4C93 /* Vocabulary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vocabulary.m; sourceTree = "<group>"; };
+		4B8D41061720346F00EE4C93 /* VocabularyDict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VocabularyDict.h; sourceTree = "<group>"; };
+		4B8D41071720346F00EE4C93 /* VocabularyDict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VocabularyDict.m; sourceTree = "<group>"; };
+		4B8D410B172034EF00EE4C93 /* FlashCardRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashCardRootViewController.h; sourceTree = "<group>"; };
+		4B8D410C172034EF00EE4C93 /* FlashCardRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardRootViewController.m; sourceTree = "<group>"; };
+		4B8D410D172034EF00EE4C93 /* FlashCardTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashCardTableViewController.h; sourceTree = "<group>"; };
+		4B8D410E172034F000EE4C93 /* FlashCardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardTableViewController.m; sourceTree = "<group>"; };
+		4B8D410F172034F000EE4C93 /* FlashCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashCardViewController.h; sourceTree = "<group>"; };
+		4B8D4110172034F000EE4C93 /* FlashCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardViewController.m; sourceTree = "<group>"; };
 		CDC0374D171FE40F00861C07 /* ScanScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC03750171FE40F00861C07 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CDC03752171FE40F00861C07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -222,9 +240,24 @@
 			name = videopart;
 			sourceTree = "<group>";
 		};
+		4B8D41011720346F00EE4C93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B8D41021720346F00EE4C93 /* FlashCardDataManager.h */,
+				4B8D41031720346F00EE4C93 /* FlashCardDataManager.m */,
+				4B8D41041720346F00EE4C93 /* Vocabulary.h */,
+				4B8D41051720346F00EE4C93 /* Vocabulary.m */,
+				4B8D41061720346F00EE4C93 /* VocabularyDict.h */,
+				4B8D41071720346F00EE4C93 /* VocabularyDict.m */,
+			);
+			name = Model;
+			path = TestBarcodeScanner/Model;
+			sourceTree = "<group>";
+		};
 		CDC03744171FE40F00861C07 = {
 			isa = PBXGroup;
 			children = (
+				4B8D41011720346F00EE4C93 /* Model */,
 				CDC037A0171FE6A500861C07 /* ZXingObjC.xcodeproj */,
 				CDC03756171FE40F00861C07 /* TestBarcodeScanner */,
 				CDC0374F171FE40F00861C07 /* Frameworks */,
@@ -260,6 +293,12 @@
 		CDC03756171FE40F00861C07 /* TestBarcodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				4B8D410B172034EF00EE4C93 /* FlashCardRootViewController.h */,
+				4B8D410C172034EF00EE4C93 /* FlashCardRootViewController.m */,
+				4B8D410D172034EF00EE4C93 /* FlashCardTableViewController.h */,
+				4B8D410E172034F000EE4C93 /* FlashCardTableViewController.m */,
+				4B8D410F172034F000EE4C93 /* FlashCardViewController.h */,
+				4B8D4110172034F000EE4C93 /* FlashCardViewController.m */,
 				4B8D40BD172028B100EE4C93 /* AFNetworking */,
 				4B8D40E9172028F100EE4C93 /* videopart */,
 				CDC0375F171FE40F00861C07 /* AppDelegate.h */,
@@ -446,6 +485,12 @@
 				4B8D40E6172028E300EE4C93 /* EFDownloadManager.m in Sources */,
 				4B8D40E7172028E300EE4C93 /* EFVideoViewController.m in Sources */,
 				4B8D40E8172028E300EE4C93 /* MediaData.m in Sources */,
+				4B8D41081720346F00EE4C93 /* FlashCardDataManager.m in Sources */,
+				4B8D41091720346F00EE4C93 /* Vocabulary.m in Sources */,
+				4B8D410A1720346F00EE4C93 /* VocabularyDict.m in Sources */,
+				4B8D4111172034F000EE4C93 /* FlashCardRootViewController.m in Sources */,
+				4B8D4112172034F000EE4C93 /* FlashCardTableViewController.m in Sources */,
+				4B8D4113172034F000EE4C93 /* FlashCardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

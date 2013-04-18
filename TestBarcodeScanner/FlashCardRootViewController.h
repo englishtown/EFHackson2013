@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Vocabulary.h"
-#import "VocabularyDict.h"
+//#import "Vocabulary.h"
+//#import "VocabularyDict.h"
 #import "FlashCardViewController.h"
 
 @interface FlashCardRootViewController : UIViewController <UIScrollViewDelegate> {

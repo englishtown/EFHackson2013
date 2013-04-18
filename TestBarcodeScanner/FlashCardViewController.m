@@ -7,7 +7,7 @@
 //
 
 #import "FlashCardViewController.h"
-#import <AVFoundation/AVFoundation.h>
+
 
 @interface FlashCardViewController ()
 
@@ -82,11 +82,11 @@
         NSData *_mp3data = [NSData dataWithContentsOfURL:[NSURL URLWithString: _mp3file]];
         
         NSError *error;
-        AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithData:_mp3data error:&error];
+        self.audioPlayer = [[AVAudioPlayer alloc] initWithData:_mp3data error:&error];
         [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
         [[AVAudioSession sharedInstance] setActive: YES error: nil];
         [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
-        [audioPlayer play];
+        [self.audioPlayer play];
     }
                    );
 }

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "VocabularyDict.h"
 #import "Vocabulary.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface FlashCardViewController : UIViewController {
     VocabularyDict *vDict;
@@ -20,6 +21,7 @@
 @property (nonatomic, strong) UILabel *symbol;
 @property (nonatomic, strong) UILabel *translation;
 @property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) AVAudioPlayer *audioPlayer;
 
 
 @end

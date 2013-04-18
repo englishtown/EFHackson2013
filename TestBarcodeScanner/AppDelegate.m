@@ -14,6 +14,7 @@
 #import "ActionsViewController.h"
 #import "ViewController.h"
 #import "FlashCardRootViewController.h"
+#import "ScanBarcodeViewController.h"
 
 @implementation AppDelegate
 @synthesize tabBarController;
@@ -24,8 +25,6 @@
     // Override point for customization after application launch.
     
     ScanBarcodeViewController *sbVC = [[ScanBarcodeViewController alloc] initWithNibName:@"ScanBarcodeViewController" bundle:nil];
-
-//    StudyFlashcardsViewController *sfVC = [[StudyFlashcardsViewController alloc] initWithNibName:@"StudyFlashcardsViewController" bundle:nil];
     ViewController *svVC = [[ViewController alloc] init];
 //    StudyFlashcardsViewController *svVC = [[StudyFlashcardsViewController alloc] initWithNibName:@"StudyFlashcardsViewController" bundle:nil];
     FlashCardRootViewController *sfVC = [[FlashCardRootViewController alloc] init];
