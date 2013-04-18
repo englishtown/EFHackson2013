@@ -24,6 +24,27 @@
     [super viewWillAppear:animated];
     NSLog(@"%s",__PRETTY_FUNCTION__);
 
+    self.capture = [[ZXCapture alloc] init];
+    self.capture.delegate = self;
+    self.capture.rotation = 90.0f;
+    
+    // Use the back camera
+    self.capture.camera = self.capture.back;
+    
+    self.capture.layer.frame = self.view.bounds;
+    [self.view.layer addSublayer:self.capture.layer];
+    [self.view bringSubviewToFront:self.decodedLabel];
+    self.decodedLabel.numberOfLines = 0;
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+    
+    [self.capture.layer removeFromSuperlayer];
+    [self.capture stop];
+    self.capture = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
@@ -36,17 +57,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     NSLog(@"%s",__PRETTY_FUNCTION__);
     
-    self.capture = [[ZXCapture alloc] init];
-    self.capture.delegate = self;
-    self.capture.rotation = 90.0f;
-    
-    // Use the back camera
-    self.capture.camera = self.capture.back;
-    
-    self.capture.layer.frame = self.view.bounds;
-    [self.view.layer addSublayer:self.capture.layer];
-    [self.view bringSubviewToFront:self.decodedLabel];
-    self.decodedLabel.numberOfLines = 0;
+  
     
 
 }
