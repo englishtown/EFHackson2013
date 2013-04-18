@@ -23,8 +23,8 @@
     // Override point for customization after application launch.
     
     ScanBarcodeViewController *sbVC = [[ScanBarcodeViewController alloc] initWithNibName:@"ScanBarcodeViewController" bundle:nil];
-    StudyFlashcardsViewController *sfVC = [[StudyFlashcardsViewController alloc] initWithNibName:@"StudyFlashcardsViewController" bundle:nil];
-    FlashCardRootViewController *svVC = [[FlashCardRootViewController alloc] init];
+    StudyFlashcardsViewController *svVC = [[StudyFlashcardsViewController alloc] initWithNibName:@"StudyFlashcardsViewController" bundle:nil];
+    FlashCardRootViewController *sfVC = [[FlashCardRootViewController alloc] init];
     ActionsViewController *aVC = [[ActionsViewController alloc] initWithNibName:@"ActionsViewController" bundle:nil];
 
     sbVC.title = @"Scan";

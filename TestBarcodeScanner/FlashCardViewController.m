@@ -24,15 +24,15 @@
     return self;
 }
 
-#define labelHeight 50
+#define labelHeight 40
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.word = [[UILabel alloc] initWithFrame:CGRectMake(10, 50, 200, labelHeight)];
-    self.symbol = [[UILabel alloc] initWithFrame:CGRectMake(10, 100, 200, labelHeight)];
-    self.translation = [[UILabel alloc] initWithFrame:CGRectMake(10, 150, 220, 60)];
+    self.symbol = [[UILabel alloc] initWithFrame:CGRectMake(10, 90, 200, labelHeight)];
+    self.translation = [[UILabel alloc] initWithFrame:CGRectMake(10, 130, 220, 60)];
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 220, 300, 240)];
     
     self.translation.numberOfLines = 0;
