@@ -32,10 +32,12 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.word = [[UILabel alloc] initWithFrame:CGRectMake(10, 50, 200, labelHeight)];
     self.symbol = [[UILabel alloc] initWithFrame:CGRectMake(10, 100, 200, labelHeight)];
-    self.translation = [[UILabel alloc] initWithFrame:CGRectMake(10, 150, 220, labelHeight)];
+    self.translation = [[UILabel alloc] initWithFrame:CGRectMake(10, 150, 220, 60)];
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 220, 300, 240)];
     
-    UIButton *audioButton = [[UIButton alloc] initWithFrame:CGRectMake(200, 50, 50, 50)];
+    self.translation.numberOfLines = 0;
+    
+    UIButton *audioButton = [[UIButton alloc] initWithFrame:CGRectMake(250, 50, 50, 50)];
     [audioButton setBackgroundImage:[UIImage imageNamed:@"sound_big.png"] forState:UIControlStateNormal];
     [audioButton addTarget:self action:@selector(playAudio) forControlEvents:UIControlEventTouchUpInside];
     

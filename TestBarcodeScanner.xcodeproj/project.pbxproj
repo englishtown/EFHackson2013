@@ -83,7 +83,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
+
 		BF47F17E17202AE7009C49B8 /* FlashCardDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashCardDataManager.h; sourceTree = "<group>"; };
 		BF47F17F17202AE7009C49B8 /* FlashCardDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardDataManager.m; sourceTree = "<group>"; };
 		BF47F18017202AE7009C49B8 /* Vocabulary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vocabulary.h; sourceTree = "<group>"; };
@@ -101,8 +101,7 @@
 		BF47F19417202AFE009C49B8 /* sound_big_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound_big_1@2x.png"; sourceTree = "<group>"; };
 		BF47F19517202AFE009C49B8 /* sound_big_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound_big_2@2x.png"; sourceTree = "<group>"; };
 		BF47F19617202AFE009C49B8 /* sound_big_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound_big_3@2x.png"; sourceTree = "<group>"; };
-=======
->>>>>>> e825f6bbe07c282f954e12ab7fbaad55b135bca5
+
 		CDC0374D171FE40F00861C07 /* ScanScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC03750171FE40F00861C07 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CDC03752171FE40F00861C07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
