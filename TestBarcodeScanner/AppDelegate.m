@@ -35,6 +35,9 @@
     svVC.title = @"Video";
     aVC.title = @"Actions";
     
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [[AVAudioSession sharedInstance] setActive: YES error: nil];
+    
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[sbVC,svVC, sfVC,aVC];
     self.window.rootViewController = self.tabBarController;

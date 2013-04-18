@@ -83,8 +83,7 @@
         
         NSError *error;
         self.audioPlayer = [[AVAudioPlayer alloc] initWithData:_mp3data error:&error];
-        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
-        [[AVAudioSession sharedInstance] setActive: YES error: nil];
+
         [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
         [self.audioPlayer play];
     }

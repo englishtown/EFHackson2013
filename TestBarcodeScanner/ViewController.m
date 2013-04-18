@@ -57,8 +57,14 @@
 //    [testButton addTarget:self action:@selector(fetchUrl) forControlEvents:UIControlEventTouchUpInside];
 //    [self.view addSubview:testButton];
     
+
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self fetchUrl];
 }
+
 -(void)recieveActivityId:(NSNotification *)noti
 {
     NSLog(@"recieved event %@",noti);
