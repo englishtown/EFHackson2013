@@ -22,7 +22,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    ScanBarcodeViewController *sbVC = [[ScanBarcodeViewController alloc] initWithNibName:@"ScanBarcodeViewController" bundle:nil];
+    StudyFlashcardsViewController *sbVC = [[StudyFlashcardsViewController alloc] initWithNibName:@"StudyFlashcardsViewController" bundle:nil];
     StudyFlashcardsViewController *svVC = [[StudyFlashcardsViewController alloc] initWithNibName:@"StudyFlashcardsViewController" bundle:nil];
     FlashCardRootViewController *sfVC = [[FlashCardRootViewController alloc] init];
     ActionsViewController *aVC = [[ActionsViewController alloc] initWithNibName:@"ActionsViewController" bundle:nil];
