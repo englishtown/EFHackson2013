@@ -31,7 +31,16 @@
 		4B8D4111172034F000EE4C93 /* FlashCardRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D410C172034EF00EE4C93 /* FlashCardRootViewController.m */; };
 		4B8D4112172034F000EE4C93 /* FlashCardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D410E172034F000EE4C93 /* FlashCardTableViewController.m */; };
 		4B8D4113172034F000EE4C93 /* FlashCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D4110172034F000EE4C93 /* FlashCardViewController.m */; };
+<<<<<<< HEAD
 		CD3DFF7A1720EA4500D2E0C0 /* BarcodeScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3DFF791720EA4500D2E0C0 /* BarcodeScanner.m */; };
+=======
+		BF6DE3751720E811009F2C5E /* sound_big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF6DE3701720E811009F2C5E /* sound_big@2x.png */; };
+		BF6DE3761720E811009F2C5E /* sound_big_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF6DE3711720E811009F2C5E /* sound_big_0@2x.png */; };
+		BF6DE3771720E811009F2C5E /* sound_big_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF6DE3721720E811009F2C5E /* sound_big_1@2x.png */; };
+		BF6DE3781720E811009F2C5E /* sound_big_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF6DE3731720E811009F2C5E /* sound_big_2@2x.png */; };
+		BF6DE3791720E811009F2C5E /* sound_big_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF6DE3741720E811009F2C5E /* sound_big_3@2x.png */; };
+		BF6DE37D1720E8C0009F2C5E /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF6DE37C1720E8C0009F2C5E /* icon@2x.png */; };
+>>>>>>> 42864c2a164ffe28252b1430057542c8e06e4e60
 		CDC03751171FE40F00861C07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC03750171FE40F00861C07 /* UIKit.framework */; };
 		CDC03753171FE40F00861C07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC03752171FE40F00861C07 /* Foundation.framework */; };
 		CDC03755171FE40F00861C07 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC03754171FE40F00861C07 /* CoreGraphics.framework */; };
@@ -58,6 +67,7 @@
 		CDC03805171FFD8400861C07 /* ActionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC03803171FFD8400861C07 /* ActionsViewController.xib */; };
 		FBDFAE441720373E004443A6 /* StartActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDFAE421720373E004443A6 /* StartActionViewController.m */; };
 		FBDFAE451720373E004443A6 /* StartActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDFAE431720373E004443A6 /* StartActionViewController.xib */; };
+		FBE450F91720EE5D004B8FC5 /* UIImage+LipOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE450F81720EE5D004B8FC5 /* UIImage+LipOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,8 +154,17 @@
 		4B8D410E172034F000EE4C93 /* FlashCardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardTableViewController.m; sourceTree = "<group>"; };
 		4B8D410F172034F000EE4C93 /* FlashCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashCardViewController.h; sourceTree = "<group>"; };
 		4B8D4110172034F000EE4C93 /* FlashCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardViewController.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		CD3DFF781720EA4500D2E0C0 /* BarcodeScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeScanner.h; sourceTree = "<group>"; };
 		CD3DFF791720EA4500D2E0C0 /* BarcodeScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScanner.m; sourceTree = "<group>"; };
+=======
+		BF6DE3701720E811009F2C5E /* sound_big@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound_big@2x.png"; sourceTree = "<group>"; };
+		BF6DE3711720E811009F2C5E /* sound_big_0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound_big_0@2x.png"; sourceTree = "<group>"; };
+		BF6DE3721720E811009F2C5E /* sound_big_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound_big_1@2x.png"; sourceTree = "<group>"; };
+		BF6DE3731720E811009F2C5E /* sound_big_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound_big_2@2x.png"; sourceTree = "<group>"; };
+		BF6DE3741720E811009F2C5E /* sound_big_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound_big_3@2x.png"; sourceTree = "<group>"; };
+		BF6DE37C1720E8C0009F2C5E /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+>>>>>>> 42864c2a164ffe28252b1430057542c8e06e4e60
 		CDC0374D171FE40F00861C07 /* ScanScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC03750171FE40F00861C07 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CDC03752171FE40F00861C07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -181,6 +200,8 @@
 		FBDFAE411720373E004443A6 /* StartActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartActionViewController.h; sourceTree = "<group>"; };
 		FBDFAE421720373E004443A6 /* StartActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartActionViewController.m; sourceTree = "<group>"; };
 		FBDFAE431720373E004443A6 /* StartActionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartActionViewController.xib; sourceTree = "<group>"; };
+		FBE450F71720EE5D004B8FC5 /* UIImage+LipOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LipOperation.h"; sourceTree = "<group>"; };
+		FBE450F81720EE5D004B8FC5 /* UIImage+LipOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LipOperation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,9 +283,32 @@
 			path = TestBarcodeScanner/Model;
 			sourceTree = "<group>";
 		};
+		BF6DE3671720E6B4009F2C5E /* Recourse */ = {
+			isa = PBXGroup;
+			children = (
+				BF6DE36F1720E811009F2C5E /* Image */,
+			);
+			name = Recourse;
+			sourceTree = "<group>";
+		};
+		BF6DE36F1720E811009F2C5E /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				BF6DE3701720E811009F2C5E /* sound_big@2x.png */,
+				BF6DE3711720E811009F2C5E /* sound_big_0@2x.png */,
+				BF6DE3721720E811009F2C5E /* sound_big_1@2x.png */,
+				BF6DE3731720E811009F2C5E /* sound_big_2@2x.png */,
+				BF6DE3741720E811009F2C5E /* sound_big_3@2x.png */,
+			);
+			name = Image;
+			path = TestBarcodeScanner/Image;
+			sourceTree = "<group>";
+		};
 		CDC03744171FE40F00861C07 = {
 			isa = PBXGroup;
 			children = (
+				BF6DE37C1720E8C0009F2C5E /* icon@2x.png */,
+				BF6DE3671720E6B4009F2C5E /* Recourse */,
 				4B8D41011720346F00EE4C93 /* Model */,
 				CDC037A0171FE6A500861C07 /* ZXingObjC.xcodeproj */,
 				CDC03756171FE40F00861C07 /* TestBarcodeScanner */,
@@ -301,6 +345,8 @@
 		CDC03756171FE40F00861C07 /* TestBarcodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				FBE450F71720EE5D004B8FC5 /* UIImage+LipOperation.h */,
+				FBE450F81720EE5D004B8FC5 /* UIImage+LipOperation.m */,
 				4B8D410B172034EF00EE4C93 /* FlashCardRootViewController.h */,
 				4B8D410C172034EF00EE4C93 /* FlashCardRootViewController.m */,
 				4B8D410D172034EF00EE4C93 /* FlashCardTableViewController.h */,
@@ -365,9 +411,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CDC0374C171FE40F00861C07 /* ScanScan */ = {
+		CDC0374C171FE40F00861C07 /* Winner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDC03770171FE40F00861C07 /* Build configuration list for PBXNativeTarget "ScanScan" */;
+			buildConfigurationList = CDC03770171FE40F00861C07 /* Build configuration list for PBXNativeTarget "Winner" */;
 			buildPhases = (
 				CDC03749171FE40F00861C07 /* Sources */,
 				CDC0374A171FE40F00861C07 /* Frameworks */,
@@ -377,7 +423,7 @@
 			);
 			dependencies = (
 			);
-			name = ScanScan;
+			name = Winner;
 			productName = TestBarcodeScanner;
 			productReference = CDC0374D171FE40F00861C07 /* ScanScan.app */;
 			productType = "com.apple.product-type.application";
@@ -409,7 +455,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				CDC0374C171FE40F00861C07 /* ScanScan */,
+				CDC0374C171FE40F00861C07 /* Winner */,
 			);
 		};
 /* End PBXProject section */
@@ -469,6 +515,12 @@
 				4B8D40ED1720292500EE4C93 /* Download.png in Resources */,
 				4B8D40EE1720292500EE4C93 /* Select.png in Resources */,
 				4B8D40EF1720292500EE4C93 /* Forward.png in Resources */,
+				BF6DE3751720E811009F2C5E /* sound_big@2x.png in Resources */,
+				BF6DE3761720E811009F2C5E /* sound_big_0@2x.png in Resources */,
+				BF6DE3771720E811009F2C5E /* sound_big_1@2x.png in Resources */,
+				BF6DE3781720E811009F2C5E /* sound_big_2@2x.png in Resources */,
+				BF6DE3791720E811009F2C5E /* sound_big_3@2x.png in Resources */,
+				BF6DE37D1720E8C0009F2C5E /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,7 +558,11 @@
 				4B8D4111172034F000EE4C93 /* FlashCardRootViewController.m in Sources */,
 				4B8D4112172034F000EE4C93 /* FlashCardTableViewController.m in Sources */,
 				4B8D4113172034F000EE4C93 /* FlashCardViewController.m in Sources */,
+<<<<<<< HEAD
 				CD3DFF7A1720EA4500D2E0C0 /* BarcodeScanner.m in Sources */,
+=======
+				FBE450F91720EE5D004B8FC5 /* UIImage+LipOperation.m in Sources */,
+>>>>>>> 42864c2a164ffe28252b1430057542c8e06e4e60
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,7 +682,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CDC03770171FE40F00861C07 /* Build configuration list for PBXNativeTarget "ScanScan" */ = {
+		CDC03770171FE40F00861C07 /* Build configuration list for PBXNativeTarget "Winner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CDC03771171FE40F00861C07 /* Debug */,
