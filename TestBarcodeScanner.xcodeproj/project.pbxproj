@@ -37,6 +37,13 @@
 		BF6DE3781720E811009F2C5E /* sound_big_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF6DE3731720E811009F2C5E /* sound_big_2@2x.png */; };
 		BF6DE3791720E811009F2C5E /* sound_big_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF6DE3741720E811009F2C5E /* sound_big_3@2x.png */; };
 		BF6DE37D1720E8C0009F2C5E /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF6DE37C1720E8C0009F2C5E /* icon@2x.png */; };
+		BF6DE3881720EFEA009F2C5E /* facetime@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF6DE3871720EFEA009F2C5E /* facetime@2x.png */; };
+		BF6DE38A1720F3C2009F2C5E /* scan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF6DE3891720F3C2009F2C5E /* scan@2x.png */; };
+		BF6DE38C1720F87D009F2C5E /* Balloon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF6DE38B1720F87D009F2C5E /* Balloon@2x.png */; };
+		BF6DE38E1720F926009F2C5E /* Import@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF6DE38D1720F926009F2C5E /* Import@2x.png */; };
+		BF6DE3901720F96B009F2C5E /* Notepad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF6DE38F1720F96B009F2C5E /* Notepad@2x.png */; };
+		BF6DE3921720F994009F2C5E /* Audit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF6DE3911720F993009F2C5E /* Audit@2x.png */; };
+		BF6DE3941720F9DD009F2C5E /* Cinema@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF6DE3931720F9DD009F2C5E /* Cinema@2x.png */; };
 		CDC03751171FE40F00861C07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC03750171FE40F00861C07 /* UIKit.framework */; };
 		CDC03753171FE40F00861C07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC03752171FE40F00861C07 /* Foundation.framework */; };
 		CDC03755171FE40F00861C07 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC03754171FE40F00861C07 /* CoreGraphics.framework */; };
@@ -154,8 +161,15 @@
 		BF6DE3721720E811009F2C5E /* sound_big_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound_big_1@2x.png"; sourceTree = "<group>"; };
 		BF6DE3731720E811009F2C5E /* sound_big_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound_big_2@2x.png"; sourceTree = "<group>"; };
 		BF6DE3741720E811009F2C5E /* sound_big_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound_big_3@2x.png"; sourceTree = "<group>"; };
-		BF6DE37C1720E8C0009F2C5E /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		CDC0374D171FE40F00861C07 /* ScanScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6DE37C1720E8C0009F2C5E /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../../icon@2x.png"; sourceTree = "<group>"; };
+		BF6DE3871720EFEA009F2C5E /* facetime@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facetime@2x.png"; sourceTree = "<group>"; };
+		BF6DE3891720F3C2009F2C5E /* scan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan@2x.png"; sourceTree = "<group>"; };
+		BF6DE38B1720F87D009F2C5E /* Balloon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Balloon@2x.png"; sourceTree = "<group>"; };
+		BF6DE38D1720F926009F2C5E /* Import@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Import@2x.png"; sourceTree = "<group>"; };
+		BF6DE38F1720F96B009F2C5E /* Notepad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Notepad@2x.png"; sourceTree = "<group>"; };
+		BF6DE3911720F993009F2C5E /* Audit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Audit@2x.png"; sourceTree = "<group>"; };
+		BF6DE3931720F9DD009F2C5E /* Cinema@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cinema@2x.png"; sourceTree = "<group>"; };
+		CDC0374D171FE40F00861C07 /* ScanScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ScanScan.app; path = Winner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC03750171FE40F00861C07 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CDC03752171FE40F00861C07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CDC03754171FE40F00861C07 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -282,11 +296,19 @@
 		BF6DE36F1720E811009F2C5E /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				BF6DE37C1720E8C0009F2C5E /* icon@2x.png */,
 				BF6DE3701720E811009F2C5E /* sound_big@2x.png */,
 				BF6DE3711720E811009F2C5E /* sound_big_0@2x.png */,
 				BF6DE3721720E811009F2C5E /* sound_big_1@2x.png */,
 				BF6DE3731720E811009F2C5E /* sound_big_2@2x.png */,
 				BF6DE3741720E811009F2C5E /* sound_big_3@2x.png */,
+				BF6DE3891720F3C2009F2C5E /* scan@2x.png */,
+				BF6DE3911720F993009F2C5E /* Audit@2x.png */,
+				BF6DE3931720F9DD009F2C5E /* Cinema@2x.png */,
+				BF6DE3871720EFEA009F2C5E /* facetime@2x.png */,
+				BF6DE38D1720F926009F2C5E /* Import@2x.png */,
+				BF6DE38B1720F87D009F2C5E /* Balloon@2x.png */,
+				BF6DE38F1720F96B009F2C5E /* Notepad@2x.png */,
 			);
 			name = Image;
 			path = TestBarcodeScanner/Image;
@@ -295,11 +317,10 @@
 		CDC03744171FE40F00861C07 = {
 			isa = PBXGroup;
 			children = (
-				BF6DE37C1720E8C0009F2C5E /* icon@2x.png */,
+				CDC03756171FE40F00861C07 /* TestBarcodeScanner */,
 				BF6DE3671720E6B4009F2C5E /* Recourse */,
 				4B8D41011720346F00EE4C93 /* Model */,
 				CDC037A0171FE6A500861C07 /* ZXingObjC.xcodeproj */,
-				CDC03756171FE40F00861C07 /* TestBarcodeScanner */,
 				CDC0374F171FE40F00861C07 /* Frameworks */,
 				CDC0374E171FE40F00861C07 /* Products */,
 			);
@@ -333,20 +354,17 @@
 		CDC03756171FE40F00861C07 /* TestBarcodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				CDC0375F171FE40F00861C07 /* AppDelegate.h */,
+				CDC03760171FE40F00861C07 /* AppDelegate.m */,
 				4B8D410B172034EF00EE4C93 /* FlashCardRootViewController.h */,
 				4B8D410C172034EF00EE4C93 /* FlashCardRootViewController.m */,
 				4B8D410D172034EF00EE4C93 /* FlashCardTableViewController.h */,
 				4B8D410E172034F000EE4C93 /* FlashCardTableViewController.m */,
 				4B8D410F172034F000EE4C93 /* FlashCardViewController.h */,
 				4B8D4110172034F000EE4C93 /* FlashCardViewController.m */,
-				4B8D40BD172028B100EE4C93 /* AFNetworking */,
-				4B8D40E9172028F100EE4C93 /* videopart */,
-				CDC0375F171FE40F00861C07 /* AppDelegate.h */,
-				CDC03760171FE40F00861C07 /* AppDelegate.m */,
 				CDC03768171FE40F00861C07 /* ScanBarcodeViewController.h */,
 				CDC03769171FE40F00861C07 /* ScanBarcodeViewController.m */,
 				CDC0376B171FE40F00861C07 /* ScanBarcodeViewController.xib */,
-				CDC03757171FE40F00861C07 /* Supporting Files */,
 				CDC037F7171FF54D00861C07 /* StudyVideoViewController.h */,
 				CDC037F8171FF54D00861C07 /* StudyVideoViewController.m */,
 				CDC037F9171FF54D00861C07 /* StudyVideoViewController.xib */,
@@ -359,6 +377,9 @@
 				FBDFAE411720373E004443A6 /* StartActionViewController.h */,
 				FBDFAE421720373E004443A6 /* StartActionViewController.m */,
 				FBDFAE431720373E004443A6 /* StartActionViewController.xib */,
+				4B8D40BD172028B100EE4C93 /* AFNetworking */,
+				4B8D40E9172028F100EE4C93 /* videopart */,
+				CDC03757171FE40F00861C07 /* Supporting Files */,
 			);
 			path = TestBarcodeScanner;
 			sourceTree = "<group>";
@@ -505,6 +526,13 @@
 				BF6DE3781720E811009F2C5E /* sound_big_2@2x.png in Resources */,
 				BF6DE3791720E811009F2C5E /* sound_big_3@2x.png in Resources */,
 				BF6DE37D1720E8C0009F2C5E /* icon@2x.png in Resources */,
+				BF6DE3881720EFEA009F2C5E /* facetime@2x.png in Resources */,
+				BF6DE38A1720F3C2009F2C5E /* scan@2x.png in Resources */,
+				BF6DE38C1720F87D009F2C5E /* Balloon@2x.png in Resources */,
+				BF6DE38E1720F926009F2C5E /* Import@2x.png in Resources */,
+				BF6DE3901720F96B009F2C5E /* Notepad@2x.png in Resources */,
+				BF6DE3921720F994009F2C5E /* Audit@2x.png in Resources */,
+				BF6DE3941720F9DD009F2C5E /* Cinema@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

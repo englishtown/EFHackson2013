@@ -26,19 +26,16 @@
     // Override point for customization after application launch.
     
     ScanBarcodeViewController *sbVC = [[ScanBarcodeViewController alloc] initWithNibName:@"ScanBarcodeViewController" bundle:nil];
-//    StudyFlashcardsViewController *sfVC = [[StudyFlashcardsViewController alloc] initWithNibName:@"StudyFlashcardsViewController" bundle:nil];
-//    StudyVideoViewController *svVC = [[StudyVideoViewController alloc] initWithNibName:@"StudyVideoViewController" bundle:nil];
     ActionsViewController *aaVC = [[ActionsViewController alloc] initWithNibName:@"ActionsViewController" bundle:nil];
     UINavigationController *aVC = [[UINavigationController alloc] initWithRootViewController:aaVC];
     [aVC.navigationBar setTintColor:[UIColor colorWithRed:6/255.0 green:64/255.0 blue:94/255.0 alpha:1.0]];
     ViewController *svVC = [[ViewController alloc] init];
     FlashCardRootViewController *sfVC = [[FlashCardRootViewController alloc] init];
 
-
     sbVC.title = @"Scan";
     sfVC.title = @"Flashcards";
     svVC.title = @"Video";
-    aVC.title = @"Actions";
+    aVC.title = @"Facetime";
     
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     [[AVAudioSession sharedInstance] setActive: YES error: nil];
@@ -46,6 +43,20 @@
     self.tabBarController = [[UITabBarController alloc] init];
     [self.tabBarController.tabBar setTintColor:[UIColor colorWithRed:6/255.0 green:64/255.0 blue:94/255.0 alpha:1.0]];
     self.tabBarController.viewControllers = @[sbVC,svVC, sfVC,aVC];
+    
+    UITabBarItem *scanItem = (UITabBarItem *)[self.tabBarController.tabBar.items objectAtIndex:0];
+    scanItem.image = [UIImage imageNamed:@"Audit.png"];
+    
+    UITabBarItem *videoItem = (UITabBarItem *)[self.tabBarController.tabBar.items objectAtIndex:1];
+    videoItem.image = [UIImage imageNamed:@"Cinema.png"];
+    
+    UITabBarItem *flashcardItem = (UITabBarItem *)[self.tabBarController.tabBar.items objectAtIndex:2];
+    flashcardItem.image = [UIImage imageNamed:@"Notepad.png"];
+    
+    UITabBarItem *facetimeItem = (UITabBarItem *)[self.tabBarController.tabBar.items objectAtIndex:3];
+    facetimeItem.image = [UIImage imageNamed:@"Balloon.png"];
+    
+    
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
