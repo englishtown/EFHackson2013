@@ -43,6 +43,8 @@
         return;
     }
     
+    self.unitIdString = newUnitId;
+    
     [self prepareVocabularyData];
     
     
