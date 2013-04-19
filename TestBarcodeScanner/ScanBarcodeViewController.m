@@ -94,20 +94,17 @@
         }
         
         NSArray *a = [result.text componentsSeparatedByString:@","];
-        if ([a count] == 1 && [[a objectAtIndex:0] hasPrefix:@"activity!"] ) {
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"ACTIVITY_ID_Ready" object:[NSString stringWithFormat:@"%@",@"89774"]];
+        NSString *unit_idStr = [[a objectAtIndex:0] stringByReplacingOccurrencesOfString:@"unit!" withString:@""];
+        
+        if (([a count] == 1) || (([a count] == 2) && ([[NSString stringWithFormat:@"%@", [a objectAtIndex:1]] length]  == 0))) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"FlashCardView" object:[NSString stringWithFormat:@"%@",unit_idStr]];
             return;
         }else if([a count] == 2 ){
-            for (NSString *s in a) {
-                if ([s hasPrefix:@"unit!"]) {
-                    unitId = s;
-                }
-                if ([s hasPrefix:@"activity!"]) {
-                    activityId = s;
-                }
-            }
-            UIActionSheet *actionView = [[UIActionSheet alloc] initWithTitle:@"Title" delegate:self cancelButtonTitle:@"Redo" destructiveButtonTitle:@"Video" otherButtonTitles:@"Words", nil];
-            [actionView showFromTabBar:((AppDelegate*)[UIApplication sharedApplication].delegate).tabBarController.tabBar];
+            NSString *activity_idStr = [[a objectAtIndex:1] stringByReplacingOccurrencesOfString:@"activity!" withString:@""];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"ACTIVITY_ID_Ready" object:[NSString stringWithFormat:@"%@",activity_idStr]];
+            
+//            UIActionSheet *actionView = [[UIActionSheet alloc] initWithTitle:@"Title" delegate:self cancelButtonTitle:@"Redo" destructiveButtonTitle:@"Video" otherButtonTitles:@"Words", nil];
+//            [actionView showFromTabBar:((AppDelegate*)[UIApplication sharedApplication].delegate).tabBarController.tabBar];
 
             [self.capture stop];
             return;
