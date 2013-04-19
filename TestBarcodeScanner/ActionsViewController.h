@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ActionsViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UITableView *theList;
+@property (nonatomic, strong) NSArray *datasource;
 
 @end
