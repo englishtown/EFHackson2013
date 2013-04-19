@@ -87,9 +87,10 @@
     [dataArray addObjectsFromArray:array];
     [theTableView reloadData];
 }
+
 -(void)fetchUrl
 {
-    NSString *urlStr = [NSString stringWithFormat:@"http://schooldragonuat.englishtown.com/hackthon/courseware/coursecontent/activityresource/%@",@"89774"];
+    NSString *urlStr = [NSString stringWithFormat:@"http://schooldragonuat.englishtown.com/hackthon/courseware/coursecontent/activityresource/%@",activityId];
     [[EFDataManager sharedDataManager]parseUrlResource:urlStr];
 }
 

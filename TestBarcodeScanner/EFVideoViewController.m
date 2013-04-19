@@ -40,7 +40,7 @@
     
     NSURL *fileURL = [NSURL fileURLWithPath:mediapath];
     moviePlayerController = [[MPMoviePlayerController alloc] initWithContentURL:fileURL];
-    [moviePlayerController.view setFrame:CGRectMake(0, 0, 320, 460)];
+    [moviePlayerController.view setFrame:CGRectMake(0, 0, 320, 564-20)];
     [self.view addSubview:moviePlayerController.view];
     moviePlayerController.fullscreen = YES;
     [moviePlayerController play];
@@ -66,10 +66,10 @@
 {
     if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft || toInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
         
-        [moviePlayerController.view setFrame:CGRectMake(0, 0, 480, 300)];
+        [moviePlayerController.view setFrame:CGRectMake(0, 0, 564, 300)];
     }else{
         
-        [moviePlayerController.view setFrame:CGRectMake(0, 0, 320, 460)];
+        [moviePlayerController.view setFrame:CGRectMake(0, 0, 320, 564-20)];
     }
 }
 //-(void) didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
