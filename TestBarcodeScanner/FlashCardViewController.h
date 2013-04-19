@@ -22,6 +22,7 @@
 @property (nonatomic, strong) UILabel *translation;
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) AVAudioPlayer *audioPlayer;
+@property (nonatomic) BOOL isImageLoaded;
 
 
 @end
