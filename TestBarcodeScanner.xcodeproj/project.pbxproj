@@ -31,6 +31,7 @@
 		4B8D4111172034F000EE4C93 /* FlashCardRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D410C172034EF00EE4C93 /* FlashCardRootViewController.m */; };
 		4B8D4112172034F000EE4C93 /* FlashCardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D410E172034F000EE4C93 /* FlashCardTableViewController.m */; };
 		4B8D4113172034F000EE4C93 /* FlashCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D4110172034F000EE4C93 /* FlashCardViewController.m */; };
+		CD3DFF7A1720EA4500D2E0C0 /* BarcodeScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3DFF791720EA4500D2E0C0 /* BarcodeScanner.m */; };
 		CDC03751171FE40F00861C07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC03750171FE40F00861C07 /* UIKit.framework */; };
 		CDC03753171FE40F00861C07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC03752171FE40F00861C07 /* Foundation.framework */; };
 		CDC03755171FE40F00861C07 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC03754171FE40F00861C07 /* CoreGraphics.framework */; };
@@ -143,6 +144,8 @@
 		4B8D410E172034F000EE4C93 /* FlashCardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardTableViewController.m; sourceTree = "<group>"; };
 		4B8D410F172034F000EE4C93 /* FlashCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashCardViewController.h; sourceTree = "<group>"; };
 		4B8D4110172034F000EE4C93 /* FlashCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardViewController.m; sourceTree = "<group>"; };
+		CD3DFF781720EA4500D2E0C0 /* BarcodeScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeScanner.h; sourceTree = "<group>"; };
+		CD3DFF791720EA4500D2E0C0 /* BarcodeScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScanner.m; sourceTree = "<group>"; };
 		CDC0374D171FE40F00861C07 /* ScanScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC03750171FE40F00861C07 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CDC03752171FE40F00861C07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -308,6 +311,8 @@
 				4B8D40E9172028F100EE4C93 /* videopart */,
 				CDC0375F171FE40F00861C07 /* AppDelegate.h */,
 				CDC03760171FE40F00861C07 /* AppDelegate.m */,
+				CD3DFF781720EA4500D2E0C0 /* BarcodeScanner.h */,
+				CD3DFF791720EA4500D2E0C0 /* BarcodeScanner.m */,
 				CDC03768171FE40F00861C07 /* ScanBarcodeViewController.h */,
 				CDC03769171FE40F00861C07 /* ScanBarcodeViewController.m */,
 				CDC0376B171FE40F00861C07 /* ScanBarcodeViewController.xib */,
@@ -501,6 +506,7 @@
 				4B8D4111172034F000EE4C93 /* FlashCardRootViewController.m in Sources */,
 				4B8D4112172034F000EE4C93 /* FlashCardTableViewController.m in Sources */,
 				4B8D4113172034F000EE4C93 /* FlashCardViewController.m in Sources */,
+				CD3DFF7A1720EA4500D2E0C0 /* BarcodeScanner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
