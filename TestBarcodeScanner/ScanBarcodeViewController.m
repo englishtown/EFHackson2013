@@ -93,23 +93,25 @@
             return;
         }
         
-        NSArray *a = [result.text componentsSeparatedByString:@","];
-        NSString *unit_idStr = [[a objectAtIndex:0] stringByReplacingOccurrencesOfString:@"unit!" withString:@""];
-        
-        if (([a count] == 1) || (([a count] == 2) && ([[NSString stringWithFormat:@"%@", [a objectAtIndex:1]] length]  == 0))) {
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"FlashCardView" object:[NSString stringWithFormat:@"%@",unit_idStr]];
-            return;
-        }else if([a count] == 2 ){
-            NSString *activity_idStr = [[a objectAtIndex:1] stringByReplacingOccurrencesOfString:@"activity!" withString:@""];
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"ACTIVITY_ID_Ready" object:[NSString stringWithFormat:@"%@",activity_idStr]];
+        if ([result.text hasPrefix:@"unit"] || [result.text hasPrefix:@"activity"] ) {
             
-//            UIActionSheet *actionView = [[UIActionSheet alloc] initWithTitle:@"Title" delegate:self cancelButtonTitle:@"Redo" destructiveButtonTitle:@"Video" otherButtonTitles:@"Words", nil];
-//            [actionView showFromTabBar:((AppDelegate*)[UIApplication sharedApplication].delegate).tabBarController.tabBar];
-
-            [self.capture stop];
-            return;
+            NSArray *a = [result.text componentsSeparatedByString:@","];
+            NSString *unit_idStr = [[a objectAtIndex:0] stringByReplacingOccurrencesOfString:@"unit!" withString:@""];
+            
+            if (([a count] == 1) || (([a count] == 2) && ([[NSString stringWithFormat:@"%@", [a objectAtIndex:1]] length]  == 0))) {
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"FlashCardView" object:[NSString stringWithFormat:@"%@",unit_idStr]];
+                return;
+            }else if([a count] == 2 ){
+                NSString *activity_idStr = [[a objectAtIndex:1] stringByReplacingOccurrencesOfString:@"activity!" withString:@""];
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"ACTIVITY_ID_Ready" object:[NSString stringWithFormat:@"%@",activity_idStr]];
+                
+                //            UIActionSheet *actionView = [[UIActionSheet alloc] initWithTitle:@"Title" delegate:self cancelButtonTitle:@"Redo" destructiveButtonTitle:@"Video" otherButtonTitles:@"Words", nil];
+                //            [actionView showFromTabBar:((AppDelegate*)[UIApplication sharedApplication].delegate).tabBarController.tabBar];
+                
+                [self.capture stop];
+                return;
+            }
         }
-        
 
     }
 }
