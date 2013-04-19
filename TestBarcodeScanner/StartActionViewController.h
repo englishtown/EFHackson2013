@@ -14,6 +14,7 @@
 
 @property (nonatomic, strong) IBOutlet UIButton *upload;
 @property (nonatomic, strong) UIImagePickerController *imagePickerController;
+@property (nonatomic, strong) UIImage *uploadImage;
 
 - (IBAction)search:(id)sender;
 - (IBAction)call:(id)sender;

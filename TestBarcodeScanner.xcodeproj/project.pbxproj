@@ -64,6 +64,11 @@
 		FBDFAE441720373E004443A6 /* StartActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDFAE421720373E004443A6 /* StartActionViewController.m */; };
 		FBDFAE451720373E004443A6 /* StartActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDFAE431720373E004443A6 /* StartActionViewController.xib */; };
 		FBE450F91720EE5D004B8FC5 /* UIImage+LipOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE450F81720EE5D004B8FC5 /* UIImage+LipOperation.m */; };
+		FBE4510E1720F021004B8FC5 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE451091720F021004B8FC5 /* Reachability.m */; };
+		FBE4510F1720F021004B8FC5 /* TXHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE4510B1720F021004B8FC5 /* TXHttpManager.m */; };
+		FBE451101720F021004B8FC5 /* TXHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE4510D1720F021004B8FC5 /* TXHttpRequest.m */; };
+		FBE451151720F1E4004B8FC5 /* TXFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE451121720F1E4004B8FC5 /* TXFloatView.m */; };
+		FBE451181720F403004B8FC5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE451171720F403004B8FC5 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,7 +161,7 @@
 		BF6DE3731720E811009F2C5E /* sound_big_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound_big_2@2x.png"; sourceTree = "<group>"; };
 		BF6DE3741720E811009F2C5E /* sound_big_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound_big_3@2x.png"; sourceTree = "<group>"; };
 		BF6DE37C1720E8C0009F2C5E /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		CDC0374D171FE40F00861C07 /* ScanScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC0374D171FE40F00861C07 /* Winner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Winner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC03750171FE40F00861C07 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CDC03752171FE40F00861C07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CDC03754171FE40F00861C07 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -193,6 +198,15 @@
 		FBDFAE431720373E004443A6 /* StartActionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartActionViewController.xib; sourceTree = "<group>"; };
 		FBE450F71720EE5D004B8FC5 /* UIImage+LipOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LipOperation.h"; sourceTree = "<group>"; };
 		FBE450F81720EE5D004B8FC5 /* UIImage+LipOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LipOperation.m"; sourceTree = "<group>"; };
+		FBE451081720F021004B8FC5 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		FBE451091720F021004B8FC5 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		FBE4510A1720F021004B8FC5 /* TXHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXHttpManager.h; sourceTree = "<group>"; };
+		FBE4510B1720F021004B8FC5 /* TXHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXHttpManager.m; sourceTree = "<group>"; };
+		FBE4510C1720F021004B8FC5 /* TXHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXHttpRequest.h; sourceTree = "<group>"; };
+		FBE4510D1720F021004B8FC5 /* TXHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXHttpRequest.m; sourceTree = "<group>"; };
+		FBE451111720F1E4004B8FC5 /* TXFloatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXFloatView.h; sourceTree = "<group>"; };
+		FBE451121720F1E4004B8FC5 /* TXFloatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXFloatView.m; sourceTree = "<group>"; };
+		FBE451171720F403004B8FC5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE451181720F403004B8FC5 /* SystemConfiguration.framework in Frameworks */,
 				4B8D40F1172029A200EE4C93 /* MediaPlayer.framework in Frameworks */,
 				CDC037B9171FE87600861C07 /* QuartzCore.framework in Frameworks */,
 				CDC03787171FE60900861C07 /* AVFoundation.framework in Frameworks */,
@@ -263,7 +278,10 @@
 		4B8D41011720346F00EE4C93 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FBE451071720F021004B8FC5 /* TXHttpRequest */,
 				4B8D41021720346F00EE4C93 /* FlashCardDataManager.h */,
+				FBE451111720F1E4004B8FC5 /* TXFloatView.h */,
+				FBE451121720F1E4004B8FC5 /* TXFloatView.m */,
 				4B8D41031720346F00EE4C93 /* FlashCardDataManager.m */,
 				4B8D41041720346F00EE4C93 /* Vocabulary.h */,
 				4B8D41051720346F00EE4C93 /* Vocabulary.m */,
@@ -298,6 +316,7 @@
 		CDC03744171FE40F00861C07 = {
 			isa = PBXGroup;
 			children = (
+				FBE451171720F403004B8FC5 /* SystemConfiguration.framework */,
 				BF6DE37C1720E8C0009F2C5E /* icon@2x.png */,
 				BF6DE3671720E6B4009F2C5E /* Recourse */,
 				4B8D41011720346F00EE4C93 /* Model */,
@@ -311,7 +330,7 @@
 		CDC0374E171FE40F00861C07 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CDC0374D171FE40F00861C07 /* ScanScan.app */,
+				CDC0374D171FE40F00861C07 /* Winner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -397,6 +416,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FBE451071720F021004B8FC5 /* TXHttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				FBE451081720F021004B8FC5 /* Reachability.h */,
+				FBE451091720F021004B8FC5 /* Reachability.m */,
+				FBE4510A1720F021004B8FC5 /* TXHttpManager.h */,
+				FBE4510B1720F021004B8FC5 /* TXHttpManager.m */,
+				FBE4510C1720F021004B8FC5 /* TXHttpRequest.h */,
+				FBE4510D1720F021004B8FC5 /* TXHttpRequest.m */,
+			);
+			path = TXHttpRequest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -414,7 +446,7 @@
 			);
 			name = Winner;
 			productName = TestBarcodeScanner;
-			productReference = CDC0374D171FE40F00861C07 /* ScanScan.app */;
+			productReference = CDC0374D171FE40F00861C07 /* Winner.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -548,6 +580,10 @@
 				4B8D4112172034F000EE4C93 /* FlashCardTableViewController.m in Sources */,
 				4B8D4113172034F000EE4C93 /* FlashCardViewController.m in Sources */,
 				FBE450F91720EE5D004B8FC5 /* UIImage+LipOperation.m in Sources */,
+				FBE4510E1720F021004B8FC5 /* Reachability.m in Sources */,
+				FBE4510F1720F021004B8FC5 /* TXHttpManager.m in Sources */,
+				FBE451101720F021004B8FC5 /* TXHttpRequest.m in Sources */,
+				FBE451151720F1E4004B8FC5 /* TXFloatView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CDC0374C171FE40F00861C07"
-               BuildableName = "ScanScan.app"
-               BlueprintName = "ScanScan"
+               BuildableName = "Winner.app"
+               BlueprintName = "Winner"
                ReferencedContainer = "container:TestBarcodeScanner.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CDC0374C171FE40F00861C07"
-            BuildableName = "ScanScan.app"
-            BlueprintName = "ScanScan"
+            BuildableName = "Winner.app"
+            BlueprintName = "Winner"
             ReferencedContainer = "container:TestBarcodeScanner.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -52,8 +52,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CDC0374C171FE40F00861C07"
-            BuildableName = "ScanScan.app"
-            BlueprintName = "ScanScan"
+            BuildableName = "Winner.app"
+            BlueprintName = "Winner"
             ReferencedContainer = "container:TestBarcodeScanner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -70,8 +70,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CDC0374C171FE40F00861C07"
-            BuildableName = "ScanScan.app"
-            BlueprintName = "ScanScan"
+            BuildableName = "Winner.app"
+            BlueprintName = "Winner"
             ReferencedContainer = "container:TestBarcodeScanner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

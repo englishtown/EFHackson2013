@@ -9,9 +9,11 @@
 #import "StartActionViewController.h"
 #define min(x,y) ({ (x) < (y) ? (x) : (y); })
 #import "UIImage+LipOperation.h"
+#import "TXHttpManager.h"
+#import "TXFloatView.h"
 
 @interface StartActionViewController ()
-
+@property (nonatomic, strong) TXFloatView *loading;
 @end
 
 @implementation StartActionViewController
@@ -77,14 +79,38 @@
 
 }
 
+- (void)submitUserImage:(UIImage *)image doneBlock:(TXRequestDoneBlock)doneBlock
+{
+    NSString *strUrlPath = @"http://schooldragonuat.englishtown.com/hackthon/uploadimagehandler.ashx";
+	TXHttpRequest *req = [TXHttpRequest requestWithEndPoint:strUrlPath
+                                                 parameters:nil
+                                                  doneBlock:^(TXHttpRequest *request){
+                                                      doneBlock(request);
+                                                  }];
+    req._httpMethod = @"POSTIMAGE";
+    req._parserMode = TXRequestParserNone;
+    req._postData = UIImageJPEGRepresentation (image, 0.6);
+    [req sendRequest];
+}
+
+- (void)doUpload
+{
+    self.loading = [TXFloatView viewInSuperview:self.view];
+    [self.loading showAnimated:YES withString:nil];
+    [self submitUserImage:self.uploadImage doneBlock:^(TXHttpRequest *req){
+        [self.loading hideAnimated:YES thenCleanup:YES];
+    }];
+}
+
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     UIImage *image = [info valueForKey:UIImagePickerControllerEditedImage];
     CGSize targetSize = CGSizeMake(280*2, 280*2);
     CGSize realSize = [self forcefitSize:image.size inSize:targetSize];
-	UIImage *uploadImage = [image resizedImage:realSize interpolationQuality:kCGInterpolationDefault];
-    [self.upload setImage:uploadImage forState:UIControlStateNormal];
+	self.uploadImage = [image resizedImage:realSize interpolationQuality:kCGInterpolationDefault];
+    [self.upload setImage:self.uploadImage forState:UIControlStateNormal];
     [picker dismissModalViewControllerAnimated:YES];
+    [self performSelector:@selector(doUpload) withObject:nil afterDelay:0.3];
 }
 
 @end
