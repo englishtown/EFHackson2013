@@ -60,6 +60,10 @@
 		4B8D41A01720EECA00EE4C93 /* Detail_AddToFavorite_UUncrushedPng.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B8D41981720EECA00EE4C93 /* Detail_AddToFavorite_UUncrushedPng.png */; };
 		4B8D41A11720EECA00EE4C93 /* btnFavorite@2xUncrushedPng.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B8D41991720EECA00EE4C93 /* btnFavorite@2xUncrushedPng.png */; };
 		4B8D41A21720EECA00EE4C93 /* btnFavoriteUncrushedPng.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B8D419A1720EECA00EE4C93 /* btnFavoriteUncrushedPng.png */; };
+		4B8D41B91720F82000EE4C93 /* BarcodeScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D41B31720F82000EE4C93 /* BarcodeScanner.m */; };
+		4B8D41BA1720F82000EE4C93 /* StartActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D41B51720F82000EE4C93 /* StartActionViewController.m */; };
+		4B8D41BB1720F82000EE4C93 /* StartActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B8D41B61720F82000EE4C93 /* StartActionViewController.xib */; };
+		4B8D41BC1720F82000EE4C93 /* UIImage+LipOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D41B81720F82000EE4C93 /* UIImage+LipOperation.m */; };
 		CDC03751171FE40F00861C07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC03750171FE40F00861C07 /* UIKit.framework */; };
 		CDC03753171FE40F00861C07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC03752171FE40F00861C07 /* Foundation.framework */; };
 		CDC03755171FE40F00861C07 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC03754171FE40F00861C07 /* CoreGraphics.framework */; };
@@ -218,6 +222,13 @@
 		4B8D41981720EECA00EE4C93 /* Detail_AddToFavorite_UUncrushedPng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Detail_AddToFavorite_UUncrushedPng.png; sourceTree = "<group>"; };
 		4B8D41991720EECA00EE4C93 /* btnFavorite@2xUncrushedPng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnFavorite@2xUncrushedPng.png"; sourceTree = "<group>"; };
 		4B8D419A1720EECA00EE4C93 /* btnFavoriteUncrushedPng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnFavoriteUncrushedPng.png; sourceTree = "<group>"; };
+		4B8D41B21720F82000EE4C93 /* BarcodeScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeScanner.h; sourceTree = "<group>"; };
+		4B8D41B31720F82000EE4C93 /* BarcodeScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScanner.m; sourceTree = "<group>"; };
+		4B8D41B41720F82000EE4C93 /* StartActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartActionViewController.h; sourceTree = "<group>"; };
+		4B8D41B51720F82000EE4C93 /* StartActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartActionViewController.m; sourceTree = "<group>"; };
+		4B8D41B61720F82000EE4C93 /* StartActionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartActionViewController.xib; sourceTree = "<group>"; };
+		4B8D41B71720F82000EE4C93 /* UIImage+LipOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LipOperation.h"; sourceTree = "<group>"; };
+		4B8D41B81720F82000EE4C93 /* UIImage+LipOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LipOperation.m"; sourceTree = "<group>"; };
 		CDC0374D171FE40F00861C07 /* ScanScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC03750171FE40F00861C07 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CDC03752171FE40F00861C07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -454,6 +465,13 @@
 				CDC037F8171FF54D00861C07 /* StudyVideoViewController.m */,
 				CDC037F9171FF54D00861C07 /* StudyVideoViewController.xib */,
 				CDC037FC171FF56300861C07 /* StudyFlashcardsViewController.h */,
+				4B8D41B21720F82000EE4C93 /* BarcodeScanner.h */,
+				4B8D41B31720F82000EE4C93 /* BarcodeScanner.m */,
+				4B8D41B41720F82000EE4C93 /* StartActionViewController.h */,
+				4B8D41B51720F82000EE4C93 /* StartActionViewController.m */,
+				4B8D41B61720F82000EE4C93 /* StartActionViewController.xib */,
+				4B8D41B71720F82000EE4C93 /* UIImage+LipOperation.h */,
+				4B8D41B81720F82000EE4C93 /* UIImage+LipOperation.m */,
 				CDC037FD171FF56300861C07 /* StudyFlashcardsViewController.m */,
 				CDC037FE171FF56300861C07 /* StudyFlashcardsViewController.xib */,
 				CDC03801171FFD8400861C07 /* ActionsViewController.h */,
@@ -616,6 +634,7 @@
 				4B8D41A01720EECA00EE4C93 /* Detail_AddToFavorite_UUncrushedPng.png in Resources */,
 				4B8D41A11720EECA00EE4C93 /* btnFavorite@2xUncrushedPng.png in Resources */,
 				4B8D41A21720EECA00EE4C93 /* btnFavoriteUncrushedPng.png in Resources */,
+				4B8D41BB1720F82000EE4C93 /* StartActionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +688,9 @@
 				4B8D41901720EEAF00EE4C93 /* Restrants.m in Sources */,
 				4B8D41911720EEAF00EE4C93 /* Restrant.m in Sources */,
 				4B8D41921720EEAF00EE4C93 /* Parse.m in Sources */,
+				4B8D41B91720F82000EE4C93 /* BarcodeScanner.m in Sources */,
+				4B8D41BA1720F82000EE4C93 /* StartActionViewController.m in Sources */,
+				4B8D41BC1720F82000EE4C93 /* UIImage+LipOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

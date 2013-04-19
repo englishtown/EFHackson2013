@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ActionsViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UITableView *theList;
+@property (nonatomic, strong) NSArray *datasource;
+@property (nonatomic, strong) IBOutlet UITextField *name;
+@property (nonatomic, strong) IBOutlet UITextField *contact;
 
 @end

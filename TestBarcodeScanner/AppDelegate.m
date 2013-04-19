@@ -15,6 +15,7 @@
 #import "ViewController.h"
 #import "FlashCardRootViewController.h"
 #import "ScanBarcodeViewController.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
 @synthesize tabBarController;
@@ -25,10 +26,14 @@
     // Override point for customization after application launch.
     
     ScanBarcodeViewController *sbVC = [[ScanBarcodeViewController alloc] initWithNibName:@"ScanBarcodeViewController" bundle:nil];
+//    StudyFlashcardsViewController *sfVC = [[StudyFlashcardsViewController alloc] initWithNibName:@"StudyFlashcardsViewController" bundle:nil];
+//    StudyVideoViewController *svVC = [[StudyVideoViewController alloc] initWithNibName:@"StudyVideoViewController" bundle:nil];
+    ActionsViewController *aaVC = [[ActionsViewController alloc] initWithNibName:@"ActionsViewController" bundle:nil];
+    UINavigationController *aVC = [[UINavigationController alloc] initWithRootViewController:aaVC];
+    [aVC.navigationBar setTintColor:[UIColor colorWithRed:6/255.0 green:64/255.0 blue:94/255.0 alpha:1.0]];
     ViewController *svVC = [[ViewController alloc] init];
-//    StudyFlashcardsViewController *svVC = [[StudyFlashcardsViewController alloc] initWithNibName:@"StudyFlashcardsViewController" bundle:nil];
     FlashCardRootViewController *sfVC = [[FlashCardRootViewController alloc] init];
-    ActionsViewController *aVC = [[ActionsViewController alloc] initWithNibName:@"ActionsViewController" bundle:nil];
+
 
     sbVC.title = @"Scan";
     sfVC.title = @"Flashcards";
@@ -39,6 +44,7 @@
     [[AVAudioSession sharedInstance] setActive: YES error: nil];
     
     self.tabBarController = [[UITabBarController alloc] init];
+    [self.tabBarController.tabBar setTintColor:[UIColor colorWithRed:6/255.0 green:64/255.0 blue:94/255.0 alpha:1.0]];
     self.tabBarController.viewControllers = @[sbVC,svVC, sfVC,aVC];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
