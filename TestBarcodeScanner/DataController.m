@@ -15,7 +15,7 @@
 
 #define ServerIp @"http://api.dianping.com/v1/business/find_businesses"
 #define AppKey @"4061232521"
-#define AppSecret @"15af841455254c71bfde7b012e4ec71f"
+#define AppSecret @"9395ec1691d3479fb92cad450a537474"
 
 @implementation DataController
 

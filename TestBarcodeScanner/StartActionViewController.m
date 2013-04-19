@@ -11,6 +11,7 @@
 #import "UIImage+LipOperation.h"
 #import "TXHttpManager.h"
 #import "TXFloatView.h"
+#import "HomeViewController.h"
 
 @interface StartActionViewController ()
 @property (nonatomic, strong) TXFloatView *loading;
@@ -59,7 +60,7 @@
 
 - (IBAction)search:(id)sender
 {
-    
+    [self.navigationController pushViewController:[[HomeViewController alloc] init] animated:YES];
 }
 - (IBAction)call:(id)sender
 {
