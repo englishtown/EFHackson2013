@@ -27,6 +27,7 @@
     
     ScanBarcodeViewController *sbVC = [[ScanBarcodeViewController alloc] initWithNibName:@"ScanBarcodeViewController" bundle:nil];
     ActionsViewController *aaVC = [[ActionsViewController alloc] initWithNibName:@"ActionsViewController" bundle:nil];
+    aaVC.view;
     UINavigationController *aVC = [[UINavigationController alloc] initWithRootViewController:aaVC];
     [aVC.navigationBar setTintColor:[UIColor colorWithRed:6/255.0 green:64/255.0 blue:94/255.0 alpha:1.0]];
     ViewController *svVC = [[ViewController alloc] init];
@@ -35,7 +36,7 @@
     sbVC.title = @"Scan";
     sfVC.title = @"Flashcards";
     svVC.title = @"Video";
-    aVC.title = @"Facetime";
+    aVC.title = @"Actions";
     
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     [[AVAudioSession sharedInstance] setActive: YES error: nil];

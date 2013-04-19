@@ -95,8 +95,15 @@
         
         NSArray *a = [result.text componentsSeparatedByString:@","];
         NSString *unit_idStr = [[a objectAtIndex:0] stringByReplacingOccurrencesOfString:@"unit!" withString:@""];
-        
+        if ([result.text hasPrefix:@"party!"]) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"PARTY" object:@"8888"];
+            return;
+        }
+        if (![result.text hasPrefix:@"unit!"]) {
+            return;
+        }
         if (([a count] == 1) || (([a count] == 2) && ([[NSString stringWithFormat:@"%@", [a objectAtIndex:1]] length]  == 0))) {
+            
             [[NSNotificationCenter defaultCenter] postNotificationName:@"FlashCardView" object:[NSString stringWithFormat:@"%@",unit_idStr]];
             return;
         }else if([a count] == 2 ){

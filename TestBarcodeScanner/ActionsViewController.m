@@ -8,6 +8,7 @@
 
 #import "ActionsViewController.h"
 #import "StartActionViewController.h"
+#import "AppDelegate.h"
 
 @interface ActionsViewController ()
 
@@ -21,12 +22,25 @@
     // Do any additional setup after loading the view from its nib.
     self.datasource = [NSArray arrayWithObjects:@"Mikeal Karon",@"Daniel Wallmark",@"Eric Azumi",@"Forrest Shi", nil];
     self.theList.separatorColor = [UIColor colorWithRed:6/255.0 green:64/255.0 blue:94/255.0 alpha:1.0];
-    self.navigationController.navigationBar.topItem.title = @"introduce yourself";
+    
     [self.name setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
     [self.name setValue:[UIFont systemFontOfSize:25] forKeyPath:@"_placeholderLabel.font"];
     [self.contact setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
     [self.contact setValue:[UIFont systemFontOfSize:16] forKeyPath:@"_placeholderLabel.font"];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(partyStarted:) name:@"PARTY" object:nil];
 }
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    self.navigationController.navigationBar.topItem.title = @"introduce yourself";
+}
+
+-(void)partyStarted:(NSNotification *)noti
+{
+    [((AppDelegate*)[UIApplication sharedApplication].delegate).tabBarController setSelectedIndex:3];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
