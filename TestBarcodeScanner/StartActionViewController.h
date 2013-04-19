@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StartActionViewController : UIViewController
+@interface StartActionViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+
+@property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
+
+@property (nonatomic, strong) IBOutlet UIButton *upload;
+@property (nonatomic, strong) UIImagePickerController *imagePickerController;
+@property (nonatomic, strong) UIImage *uploadImage;
+
+- (IBAction)search:(id)sender;
+- (IBAction)call:(id)sender;
+- (IBAction)upload:(id)sender;
 
 @end
