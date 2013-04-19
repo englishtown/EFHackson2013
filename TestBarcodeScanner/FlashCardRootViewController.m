@@ -35,6 +35,8 @@
 
 -(void)receiveUnitId:(NSNotification *)noti
 {
+    
+    [((AppDelegate*)[UIApplication sharedApplication].delegate).tabBarController setSelectedIndex:2];
     NSLog(@"recieved event %@",noti);
     
     NSString *newUnitId = [noti object];
@@ -44,7 +46,6 @@
     }
     
     self.unitIdString = newUnitId;
-    
     [self prepareVocabularyData];
     
     
@@ -53,7 +54,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self prepareVocabularyData];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    if (self.contentVocabulary == nil) {
+        [self prepareVocabularyData];
+    }
 }
 
 - (void)prepareView {
@@ -141,9 +146,6 @@
         
         Vocabulary *v = [self.contentVocabulary.allValues lastObject];
         NSLog(@"Translation: %@", v.translation);
-        
-        [((AppDelegate*)[UIApplication sharedApplication].delegate).tabBarController setSelectedIndex:2];
-        
         [self prepareView];
     }];
 }
