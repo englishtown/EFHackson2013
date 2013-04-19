@@ -29,13 +29,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
     self.view.backgroundColor = [UIColor whiteColor];
     self.word = [[UILabel alloc] initWithFrame:CGRectMake(10, 50, 200, labelHeight)];
     self.symbol = [[UILabel alloc] initWithFrame:CGRectMake(10, 90, 200, labelHeight)];
     self.translation = [[UILabel alloc] initWithFrame:CGRectMake(10, 130, 220, 60)];
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 220, 300, 240)];
-    
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     self.translation.numberOfLines = 0;
+    self.isImageLoaded = false;
     
     UIButton *audioButton = [[UIButton alloc] initWithFrame:CGRectMake(250, 50, 50, 50)];
     [audioButton setBackgroundImage:[UIImage imageNamed:@"sound_big.png"] forState:UIControlStateNormal];
@@ -80,6 +83,9 @@
         
         NSString *_mp3file = self.vocabulary.audioPath;
         NSData *_mp3data = [NSData dataWithContentsOfURL:[NSURL URLWithString: _mp3file]];
+        if (_mp3data == nil) {
+            return;
+        }
         
         NSError *error;
         self.audioPlayer = [[AVAudioPlayer alloc] initWithData:_mp3data error:&error];
@@ -93,14 +99,14 @@
 
 
 - (void)loadImage {
-    dispatch_queue_t loadImageQ = dispatch_queue_create("loadImage", NULL);
     
-//    dispatch_queue_t pullVocabulary = dispatch_queue_create("vocabulary", NULL);
-//    dispatch_async(pullVocabulary, ^{
-//        NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString: url]];
-//        
-//    });
+    if (self.isImageLoaded) {
+        return;
+    }
     
+    NSString *queue = [NSString stringWithFormat:@"%@:%@", @"loadImage",self.vocabulary.word];
+    const char *queuechar = [queue UTF8String];
+    dispatch_queue_t loadImageQ = dispatch_queue_create(queuechar, NULL);
     
     dispatch_async(loadImageQ, ^{
         
@@ -109,6 +115,10 @@
         NSLog(@"GoogleService URL: %@", googleServiceUrl);
         
         NSData *responseData = [NSData dataWithContentsOfURL:[NSURL URLWithString:googleServiceUrl]];
+        
+        if (responseData == nil) {
+            return;
+        }
         
         NSError *error;
         NSDictionary *json = [NSJSONSerialization
@@ -125,6 +135,7 @@
         
         dispatch_async(dispatch_get_main_queue(), ^{
             self.imageView.image = [UIImage imageWithData:responseData];
+            self.isImageLoaded = true;
         });
         
     });
