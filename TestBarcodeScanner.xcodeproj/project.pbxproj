@@ -61,6 +61,8 @@
 		CDC03800171FF56300861C07 /* StudyFlashcardsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC037FE171FF56300861C07 /* StudyFlashcardsViewController.xib */; };
 		CDC03804171FFD8400861C07 /* ActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC03802171FFD8400861C07 /* ActionsViewController.m */; };
 		CDC03805171FFD8400861C07 /* ActionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC03803171FFD8400861C07 /* ActionsViewController.xib */; };
+		FBDFAE441720373E004443A6 /* StartActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDFAE421720373E004443A6 /* StartActionViewController.m */; };
+		FBDFAE451720373E004443A6 /* StartActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDFAE431720373E004443A6 /* StartActionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +187,9 @@
 		CDC03801171FFD8400861C07 /* ActionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsViewController.h; sourceTree = "<group>"; };
 		CDC03802171FFD8400861C07 /* ActionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsViewController.m; sourceTree = "<group>"; };
 		CDC03803171FFD8400861C07 /* ActionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionsViewController.xib; sourceTree = "<group>"; };
+		FBDFAE411720373E004443A6 /* StartActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartActionViewController.h; sourceTree = "<group>"; };
+		FBDFAE421720373E004443A6 /* StartActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartActionViewController.m; sourceTree = "<group>"; };
+		FBDFAE431720373E004443A6 /* StartActionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartActionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +356,9 @@
 				CDC03801171FFD8400861C07 /* ActionsViewController.h */,
 				CDC03802171FFD8400861C07 /* ActionsViewController.m */,
 				CDC03803171FFD8400861C07 /* ActionsViewController.xib */,
+				FBDFAE411720373E004443A6 /* StartActionViewController.h */,
+				FBDFAE421720373E004443A6 /* StartActionViewController.m */,
+				FBDFAE431720373E004443A6 /* StartActionViewController.xib */,
 			);
 			path = TestBarcodeScanner;
 			sourceTree = "<group>";
@@ -487,6 +495,7 @@
 				CDC037FB171FF54E00861C07 /* StudyVideoViewController.xib in Resources */,
 				CDC03800171FF56300861C07 /* StudyFlashcardsViewController.xib in Resources */,
 				CDC03805171FFD8400861C07 /* ActionsViewController.xib in Resources */,
+				FBDFAE451720373E004443A6 /* StartActionViewController.xib in Resources */,
 				4B8D40ED1720292500EE4C93 /* Download.png in Resources */,
 				4B8D40EE1720292500EE4C93 /* Select.png in Resources */,
 				4B8D40EF1720292500EE4C93 /* Forward.png in Resources */,
@@ -512,6 +521,7 @@
 				CDC037FA171FF54E00861C07 /* StudyVideoViewController.m in Sources */,
 				CDC037FF171FF56300861C07 /* StudyFlashcardsViewController.m in Sources */,
 				CDC03804171FFD8400861C07 /* ActionsViewController.m in Sources */,
+				FBDFAE441720373E004443A6 /* StartActionViewController.m in Sources */,
 				4B8D40D1172028B100EE4C93 /* AFHTTPClient.m in Sources */,
 				4B8D40D2172028B100EE4C93 /* AFHTTPRequestOperation.m in Sources */,
 				4B8D40D3172028B100EE4C93 /* AFImageRequestOperation.m in Sources */,
