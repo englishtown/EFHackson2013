@@ -16,5 +16,7 @@
     
 }
 @property (nonatomic, strong) VocabularyDict *contentVocabulary;
+@property (nonatomic, strong) NSString *unitIdString;
+
 
 @end

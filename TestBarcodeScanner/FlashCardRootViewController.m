@@ -9,6 +9,7 @@
 #import "FlashCardRootViewController.h"
 #import "FlashCardDataManager.h"
 #import <AVFoundation/AVFoundation.h>
+#import "AppDelegate.h"
 
 
 #define labelHeight 50
@@ -22,6 +23,30 @@
 @end
 
 @implementation FlashCardRootViewController
+
+- (id)init{
+    if (self = [super init]) {
+        self.unitIdString = @"385";
+        [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(receiveUnitId:) name:@"FlashCardView" object:nil];
+    }
+    return self;
+}
+
+
+-(void)receiveUnitId:(NSNotification *)noti
+{
+    NSLog(@"recieved event %@",noti);
+    
+    NSString *newUnitId = [noti object];
+    
+    if ([newUnitId isEqualToString:self.unitIdString]) {
+        return;
+    }
+    
+    [self prepareVocabularyData];
+    
+    
+}
 
 - (void)viewDidLoad
 {
@@ -107,12 +132,15 @@
 
 
 - (void)prepareVocabularyData {
-    [[FlashCardDataManager sharedInstance] pullVocabularyDataOfUnitId:385 withCulture:@"zh-CN" withDoneBlock:^{
+
+    [[FlashCardDataManager sharedInstance] pullVocabularyDataOfUnitId:[self.unitIdString intValue] withCulture:@"zh-CN" withDoneBlock:^{
         self.contentVocabulary = [FlashCardDataManager sharedInstance].contentVocabulary;
         
         
         Vocabulary *v = [self.contentVocabulary.allValues lastObject];
         NSLog(@"Translation: %@", v.translation);
+        
+        [((AppDelegate*)[UIApplication sharedApplication].delegate).tabBarController setSelectedIndex:2];
         
         [self prepareView];
     }];
