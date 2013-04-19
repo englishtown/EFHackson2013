@@ -49,7 +49,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self fetchUrl];
+    
 }
 
 -(void)recieveActivityId:(NSNotification *)noti
@@ -58,7 +58,7 @@
     activityId = [noti object];
     //dataArray = @[@"1",@"2"];
     //[theTableView reloadData];
-    
+    [self fetchUrl];
     [((AppDelegate*)[UIApplication sharedApplication].delegate).tabBarController setSelectedIndex:1];
 }
 -(void)recieveJson:(NSNotification *)noti

@@ -42,7 +42,7 @@
     myTableView.dataSource = self;
     [self.view addSubview:myTableView];
     
-    [self addObserver:self forKeyPath:@"mylocation" options:0 context:nil];
+    //[self addObserver:self forKeyPath:@"mylocation" options:0 context:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(getTheShopData:) name:GET_SHOP_DATA object:nil];
         
     locationManager = [[CLLocationManager alloc] init];
@@ -51,6 +51,14 @@
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     [locationManager startUpdatingLocation];
 }
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    //[self addObserver:self forKeyPath:@"mylocation" options:0 context:nil];
+    [locationManager startUpdatingLocation];
+}
+
 -(void)observeValueForKeyPath:(NSString*)keyPath ofObject:(id)object change:(NSDictionary*)change context:(void*)context {
     if (object == self && [keyPath isEqualToString:@"mylocation"]) {
         
@@ -96,7 +104,15 @@
     NSLog(@"NewLocation %f %f", newLocation.coordinate.latitude, newLocation.coordinate.longitude);
     if (mylocation == nil) {
         self.mylocation = newLocation;
+        [self huntRestrant];
     }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [locationManager stopUpdatingLocation];
+   // [self removeObserver:self forKeyPath:@"mylocation"];
 }
 
 - (void)didReceiveMemoryWarning
