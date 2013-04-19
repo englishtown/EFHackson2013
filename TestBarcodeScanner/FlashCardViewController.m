@@ -39,6 +39,7 @@
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     self.translation.numberOfLines = 0;
     self.isImageLoaded = false;
+    self.imageView.image = [UIImage imageNamed:@"Loading.png"];
     
     UIButton *audioButton = [[UIButton alloc] initWithFrame:CGRectMake(250, 50, 50, 50)];
     [audioButton setBackgroundImage:[UIImage imageNamed:@"sound_big.png"] forState:UIControlStateNormal];
