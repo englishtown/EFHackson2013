@@ -22,6 +22,10 @@
     self.datasource = [NSArray arrayWithObjects:@"Mikeal Karon",@"Daniel Wallmark",@"Eric Azumi",@"Forrest Shi", nil];
     self.theList.separatorColor = [UIColor colorWithRed:6/255.0 green:64/255.0 blue:94/255.0 alpha:1.0];
     self.navigationController.navigationBar.topItem.title = @"introduce yourself";
+    [self.name setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
+    [self.name setValue:[UIFont systemFontOfSize:25] forKeyPath:@"_placeholderLabel.font"];
+    [self.contact setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
+    [self.contact setValue:[UIFont systemFontOfSize:16] forKeyPath:@"_placeholderLabel.font"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,4 +64,9 @@
     [self.navigationController pushViewController:[[StartActionViewController alloc] init] animated:YES];
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [self.name resignFirstResponder];
+    [self.contact resignFirstResponder];
+}
 @end
