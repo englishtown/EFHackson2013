@@ -57,6 +57,7 @@
 		CDC03805171FFD8400861C07 /* ActionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC03803171FFD8400861C07 /* ActionsViewController.xib */; };
 		FBDFAE441720373E004443A6 /* StartActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDFAE421720373E004443A6 /* StartActionViewController.m */; };
 		FBDFAE451720373E004443A6 /* StartActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDFAE431720373E004443A6 /* StartActionViewController.xib */; };
+		FBE450F91720EE5D004B8FC5 /* UIImage+LipOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE450F81720EE5D004B8FC5 /* UIImage+LipOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +179,8 @@
 		FBDFAE411720373E004443A6 /* StartActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartActionViewController.h; sourceTree = "<group>"; };
 		FBDFAE421720373E004443A6 /* StartActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartActionViewController.m; sourceTree = "<group>"; };
 		FBDFAE431720373E004443A6 /* StartActionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartActionViewController.xib; sourceTree = "<group>"; };
+		FBE450F71720EE5D004B8FC5 /* UIImage+LipOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LipOperation.h"; sourceTree = "<group>"; };
+		FBE450F81720EE5D004B8FC5 /* UIImage+LipOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LipOperation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +301,8 @@
 		CDC03756171FE40F00861C07 /* TestBarcodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				FBE450F71720EE5D004B8FC5 /* UIImage+LipOperation.h */,
+				FBE450F81720EE5D004B8FC5 /* UIImage+LipOperation.m */,
 				4B8D410B172034EF00EE4C93 /* FlashCardRootViewController.h */,
 				4B8D410C172034EF00EE4C93 /* FlashCardRootViewController.m */,
 				4B8D410D172034EF00EE4C93 /* FlashCardTableViewController.h */,
@@ -501,6 +506,7 @@
 				4B8D4111172034F000EE4C93 /* FlashCardRootViewController.m in Sources */,
 				4B8D4112172034F000EE4C93 /* FlashCardTableViewController.m in Sources */,
 				4B8D4113172034F000EE4C93 /* FlashCardViewController.m in Sources */,
+				FBE450F91720EE5D004B8FC5 /* UIImage+LipOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
